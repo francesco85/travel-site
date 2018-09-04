@@ -18,7 +18,7 @@ gulp.task('watch', function(){
     //./ così torniamo alla root
     //** future cartelle
     //* futuri file
-    watch('./app/assets/css/**/*.css', function(){
+    watch('./app/assets/styles/**/*.css', function(){
         gulp.start('cssInject');
     });
     

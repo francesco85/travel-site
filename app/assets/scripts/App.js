@@ -42,7 +42,7 @@ npm i @babel/core babel-loader @babel/preset-env --save-dev
 
 */
 
-var $ = require('jquery');
+var $ = require('jquery'); 
 //var Person = require('./modules/Person');
 //es6:
 //import Person from './modules/Person';
@@ -59,7 +59,7 @@ john.greet();
 jane.greet();
 jane.payTaxes();  
 alert('Test automation '); */
-
+  
 import MobileMenu from './modules/MobileMenu';
 import RevealOnScroll from './modules/RevealOnScroll';
 import StickyHeader from './modules/StickyHeader';
