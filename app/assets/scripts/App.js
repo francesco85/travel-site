@@ -61,6 +61,10 @@ jane.payTaxes();
 alert('Test automation '); */
 
 import MobileMenu from './modules/MobileMenu';
+import RevealOnScroll from './modules/RevealOnScroll';
 
 var mobileMenu = new MobileMenu();
+var featureItem = new RevealOnScroll($('.feature-item'), "85%");
+var testimonials = new RevealOnScroll($('.testimonial'), "60%");
+
 
