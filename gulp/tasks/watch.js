@@ -21,6 +21,11 @@ gulp.task('watch', function(){
     watch('./app/assets/css/**/*.css', function(){
         gulp.start('cssInject');
     });
+    
+    
+    watch('./app/assets/scripts/**/*.js', function(){
+        gulp.start('scriptRefresh');//task scripts
+    });
 });
 
 //metodo stream di browser-sync butta tutto quello che viene inserito nel pipe direttamente nel browser
@@ -28,4 +33,9 @@ gulp.task('watch', function(){
 gulp.task('cssInject',['styles'], function(){
     return gulp.src('./app/temp/styles/style.css')
     .pipe(browserSync.stream());
+});
+
+gulp.task('scriptRefresh',['scripts'],function(){
+    browserSync.reload();
+    
 });
